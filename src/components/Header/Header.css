@@ -1,0 +1,19 @@
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-4);
+  padding: 1rem;
+  color: var(--color-1);
+}
+
+.header-container ul {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background-color: var(--color-4);
+}
+
+.numbers {
+  color: var(--color-3);
+}

@@ -1,0 +1,42 @@
+@import url('https://fonts.cdnfonts.com/css/sf-mono');
+@import url('https://fonts.cdnfonts.com/css/calibre');
+
+:root {
+  /* colors */
+  --color-1: #ccd6f6;
+  --color-2: #8892b0;
+  --color-3: #62f9d5;
+  --color-4: #0a192f;
+
+  /* shadows */
+  --box-shadow-1: 3px 3px 10px rgba(0, 0, 0, 0.4);
+  --box-shadow-2: 5px 5px 15px rgba(0, 0, 0, 0.4);
+  --box-shadow-3: 10px 10px 25px rgba(0, 0, 0, 0.4);
+
+  /* fonts */
+  --font-1: 'Calibre', sans-serif;
+
+  --font-2: 'SF Mono', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  /* font-family: var(--font-1); */
+}
+
+body {
+  background-color: var(--color-4);
+}
+
+button {
+  background-color: var(--color-4);
+  border: 1px solid var(--color-3);
+  color: var(--color-3);
+  padding: 1rem;
+  width: fit-content;
+  border-radius: 0.2rem;
+}
