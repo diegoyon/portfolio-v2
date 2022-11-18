@@ -1,14 +1,22 @@
 import React from 'react';
+import './Project.css';
 
 const Project = (props) => {
   const { content } = props;
   const { title, date, body } = content;
   return (
     <>
-      <div>Project</div>
-      <p>{title}</p>
-      <p>{date}</p>
-      <p>{body}</p>
+        <h2>{title[0]}{' '}<span>{title[1]}</span></h2>
+        <p>{date}</p>
+        <div className="project-details-div">
+          <ul className="project-details">
+          {body.map((text) => (
+            <li>
+              {text}
+            </li>
+          ))}
+                </ul>
+        </div>
     </>
   );
 };

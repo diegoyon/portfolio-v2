@@ -29,7 +29,9 @@ const Section2 = () => {
               </ul>
           </div>
           <div className="user-picture-div">
-              <div className="user-picture"></div>
+              <div className="user-picture">
+                
+              </div>
           </div>
       </div>
     </section>
