@@ -58,8 +58,6 @@ const Section3 = () => {
   const handleClick = (e) => {
    e.target.value    = setActive(true)
 
-
-
     switch (e.target.innerHTML) {
       case 'Upstatement':
         setContent({
