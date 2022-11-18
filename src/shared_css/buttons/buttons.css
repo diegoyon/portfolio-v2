@@ -1,0 +1,15 @@
+button {
+  background-color: var(--color-4);
+  border: 1px solid var(--color-3);
+  color: var(--color-3);
+  padding: 1rem;
+  width: fit-content;
+  border-radius: 0.2rem;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  font-family: var(--font-2);
+}
+
+button:hover {
+  background-color: rgb(98, 249, 213, 0.2);
+}

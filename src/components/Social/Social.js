@@ -1,24 +1,25 @@
 import React from 'react';
 import './Social.css';
+import img1 from '../../Assets/images/github.png'
+import img2 from '../../Assets/images/linkedin.png'
+import img3 from '../../Assets/images/medium.png'
+import img4 from '../../Assets/images/twitter.png'
 
 const Social = () => {
   return (
-    <div className="social">
-      <ul>
+    <div>
+      <ul className="social">
         <li>
-          <a>G</a>
+          <a><img src={img1} /></a>
         </li>
         <li>
-          <a>I</a>
+          <a><img src={img2} /></a>
         </li>
         <li>
-          <a>T</a>
+          <a><img src={img3} /></a>
         </li>
         <li>
-          <a>L</a>
-        </li>
-        <li>
-          <a>C</a>
+          <a><img src={img4} /></a>
         </li>
         <li className="line"></li>
       </ul>

@@ -1,0 +1,22 @@
+.email {
+    position: fixed;
+    color: white;
+    bottom: 5.5rem;
+    right: 4.1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    letter-spacing: 1px;
+    font-weight: 100;
+  }
+  
+.vertical {
+    list-style-type: none;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+}
+
+.line {
+  border-right: 1px solid white;
+  right: 4.5rem;
+}

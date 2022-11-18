@@ -1,26 +1,29 @@
 .section1 {
   display: flex;
   flex-direction: column;
-  width: 90vw;
-  margin: 15rem auto;
-  background-color: var(--color-4);
   color: var(--color-1);
+  width: 75%;
   gap: 1rem;
 }
 
 .section1 p:nth-child(1) {
   color: var(--color-3);
+  font-family: var(--font-2);
 }
 
 .section1 p:nth-child(2) {
-  font-size: 4rem;
+  font-size: 5rem;
+  font-weight: 600;
+  color: var(--color-1);
 }
 
 .section1 p:nth-child(3) {
-  font-size: 3rem;
+  font-size: 5rem;
+  font-weight: 600;
 }
 
 .section1 p:nth-child(4) {
+  width: 50%;
   font-size: 1.2rem;
 }
 

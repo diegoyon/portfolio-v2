@@ -2,16 +2,30 @@
   position: fixed;
   color: white;
   bottom: 5.2rem;
-  left: 1rem;
+  left: 3.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  list-style-type: none;
+  gap: 1rem;
 }
 
 .line {
+  list-style-type: none;
   height: 5rem;
   border-left: 1px solid white;
   position: fixed;
   bottom: 0;
-  left: 1.25rem;
+  left: 4rem;
+}
+
+.social img {
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.social img:hover {
+  filter: sepia(75%) saturate(476%) hue-rotate(84deg) brightness(101%) contrast(95%);
+  transform: translate3d(0, -5px, 0);
+  color: var(--color-3);
 }

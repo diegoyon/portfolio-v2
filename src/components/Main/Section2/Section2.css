@@ -1,0 +1,78 @@
+.section2 {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  width: 75%;
+}
+
+.about-me-info {
+  max-width: 500px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.about-me-skills {
+  list-style-type: circle;
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  padding: 1rem;
+}
+
+.user-picture {
+  background-color: var(--color-3);
+  background-image: url(../../../Assets/images/user-image.jpg);
+  background-size: cover;
+  background-blend-mode: multiply;
+  width: 300px;
+  aspect-ratio: 1/1;
+  border-radius: 0.5rem;
+  position: relative;
+  transition-duration: 1s;
+}
+
+.user-picture:hover {
+  background-blend-mode: normal;
+}
+
+.user-picture::before {
+  content: '';
+  border: 2px solid var(--color-3);
+  width: 300px;
+  height: 300px;
+  border-radius: 0.5rem;
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  transition-duration: 0.5s;
+  rotate: 5deg;
+  z-index: -1
+}
+
+.user-picture:hover::before {
+  rotate: 0deg;
+  left: 0.5rem;
+  top: 0.5rem;
+}
+
+.user-picture::after {
+    content: '';
+    border: 2px solid var(--color-1);
+    width: 300px;
+    height: 300px;
+    border-radius: 0.5rem;
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    transition-duration: 0.5s;
+    z-index: -1;
+    rotate: 5deg;
+  }
+  
+  .user-picture:hover::after {
+    rotate: 0deg;
+    right: 0.5rem;
+    bottom: 0.5rem;
+  }
