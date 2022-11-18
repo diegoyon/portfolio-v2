@@ -19,6 +19,20 @@
   -webkit-columns: 2;
   -moz-columns: 2;
   padding: 1rem;
+  font-family: var(--font-2);
+}
+
+.about-me-skills li::before { 
+  content: "";
+  border-color: transparent var(--color-3);
+  border-style: solid;
+  border-width: 0.20em 0 0.20em 0.30em;
+  display: block;
+  height: 0;
+  width: 0;
+  left: -1em;
+  top: 0.9em;
+  position: relative;
 }
 
 .user-picture {
@@ -31,6 +45,16 @@
   border-radius: 0.5rem;
   position: relative;
   transition-duration: 1s;
+}
+
+.user-picture-div {
+  width: 300px;
+  aspect-ratio: 1/1;
+  transition-duration: 0.5s;
+}
+
+.user-picture-div:hover {
+  transform: scale(1.02);
 }
 
 .user-picture:hover {
@@ -47,7 +71,7 @@
   left: 1rem;
   top: 1rem;
   transition-duration: 0.5s;
-  rotate: 5deg;
+  rotate: 7deg;
   z-index: -1
 }
 
@@ -68,7 +92,7 @@
     bottom: 1rem;
     transition-duration: 0.5s;
     z-index: -1;
-    rotate: 5deg;
+    rotate: 7deg;
   }
   
   .user-picture:hover::after {
